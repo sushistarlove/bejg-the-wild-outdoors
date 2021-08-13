@@ -2,17 +2,21 @@ const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const postSchema = new Schema({
+  postTitle: {
+    type: String,
+    required: 'No Title, unexceptable.',
+    minlength: 1,
+    trim: true,
+  },
   postContent: {
     type: String,
-    required: 'You need to leave a thought!',
+    required: 'Your lack of intellectual production is disgusting',
     minlength: 1,
-    maxlength: 280,
     trim: true,
   },
   user_id: {
-    type: String,
-    required: true,
-    trim: true,
+    type: Number,
+    required: true
   },
   createdAt: {
     type: Date,
