@@ -69,7 +69,7 @@ const resolvers = {
   
           await User.findOneAndUpdate(
             { _id: context.user._id },
-            { $pull: { posts: thought._id } } ///left off here
+            { $pull: { posts: thought._id } } ///left off 
           );
   
           return thought;
