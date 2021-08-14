@@ -57,6 +57,20 @@ function App() {
           </div>
         </section>
 
+        {/* main section for nav bar plus cards */}
+
+        <section style={{ display: 'flex' }} className="section columns">
+
+          <Navbar />
+
+          <Route exact path="/">
+          <Explore />
+          </Route>
+          
+
+
+        </section>
+
         
 {/* divs and Route exact paths go here */}
 
