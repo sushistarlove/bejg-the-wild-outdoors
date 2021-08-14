@@ -12,15 +12,15 @@ const Navbar = () => {
         <p className="menu-label">Categories</p>
         <ul className="menu-list">
           <li><Link>Hiking    <i className="fas fa-hiking"></i></Link> </li>
-          <li><a>Fishing    <i className="fas fa-fish"></i></a></li>
-          <li><a>Camping    <i className="fas fa-campground"></i></a></li>
-          <li><a>Misc    <i className="fas fa-binoculars"></i></a></li>
+          <li><Link>Fishing    <i className="fas fa-fish"></i></Link></li>
+          <li><Link>Camping    <i className="fas fa-campground"></i></Link></li>
+          <li><Link>Misc    <i className="fas fa-binoculars"></i></Link></li>
         </ul>
         <p className="menu-label">Profile</p>
         <ul className="menu-list">
-          <li><a>My Posts</a></li>
+          <li><Link>My Posts</Link></li>
        
-          <li><a>Account Settings</a></li>
+          <li><Link>Account Settings</Link></li>
         </ul>
       </aside>
 
