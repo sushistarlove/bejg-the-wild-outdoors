@@ -8,7 +8,7 @@ const Explore = () => {
   });
 
 
-//i think this mapping logic would be applicable to the ViewPost component rather than Explore
+//i think this mapping logic would be more applicable to the ViewPost component rather than the Explore
 
   const postList = data?.posts || [];
 
