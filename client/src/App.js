@@ -66,6 +66,18 @@ function App() {
           <Route exact path="/">
           <Explore />
           </Route>
+
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
+
+          <Route exact path="/login">
+            <Login />
+          </Route>
+
+          <Route exact path ="/viewpost">
+            <ViewPost />
+          </Route>
           
 
 

@@ -7,6 +7,9 @@ const Explore = () => {
     fetchPolicy: "no-cache"
   });
 
+
+//i think this mapping logic would be applicable to the ViewPost component rather than Explore
+
   const postList = data?.posts || [];
 
   return (
