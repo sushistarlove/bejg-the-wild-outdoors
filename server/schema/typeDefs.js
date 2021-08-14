@@ -10,8 +10,9 @@ const typeDefs = gql`
 
   type Post {
     _id: ID
-    postText: String
+    postContent: String
     postAuthor: String
+    postTitle: String
     createdAt: String
     comments: [Comment]!
   }
@@ -31,19 +32,20 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    posts(username: String): [Post]
+    posts(userID: ID): [Post]
     post(postId: ID!): Post
   }
 
   type Mutation {
     addUser(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
-    addPost(postText: String!, postAuthor: String!): Post
-    addPost(
+    addPost(postTitle: String!, postContent: String!): Post
+    addComment(
       postId: ID!
       postText: String!
       commentAuthor: String!
     ): Post
+    editPost(postTitle: String!, postContent: String!, postId: ID!): Post
     removePost(postId: ID!): Post
     removeComment(postId: ID!, commentId: ID!): Post
   }
