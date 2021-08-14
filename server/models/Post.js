@@ -15,8 +15,7 @@ const postSchema = new Schema({
     trim: true,
   },
   user_id: {
-    type: Number,
-    required: true
+    type: String,
   },
   createdAt: {
     type: Date,
