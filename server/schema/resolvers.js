@@ -4,34 +4,39 @@ const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
-    users: async () => {
-      //good
-      return User.find();
+    users: async () => { //complete
+   
+      return User.find().populate('posts');
     },
 
-    user: async (parent, { userId }) => {
-      //good
-      return User.findOne({ _id: userId });
-    },
-    posts: async () => { //good
+    user: async (parent, { username }) => { //complete
 
-      return Post.find().sort({ createdAt: -1 });
+      return User.findOne({ username: username });
     },
-    post: async (parent, { postId }) => {
+    posts: async (parent, { userID }) => { //complete
+      if(!userID) {
+        return Post.find().sort({ createdAt: -1 });
+
+      } else {
+        return Post.find({user_id: userID}).sort({ createdAt: -1 });
+      }
+      
+    },
+    post: async (parent, { postId }) => { //complete
       //good
       return Post.findOne({ _id: postId });
     },
   },
 
   Mutation: {
-    addUser: async (parent, { username, password }) => {
+    addUser: async (parent, { username, password }) => { //complete
       //good
       const user = await User.create({ username, password });
       const token = signToken(user);
 
       return { token, user };
     },
-    login: async (parent, { username, password }) => {
+    login: async (parent, { username, password }) => { //complete
       //good
       const user = await User.findOne({ username });
 
@@ -49,7 +54,7 @@ const resolvers = {
       return { token, user };
     },
 
-    addPost: async (parent, { postTitle, postContent }, context) => {
+    addPost: async (parent, { postTitle, postContent }, context) => { //maybe
       //good
       if (context.user) {
         const post = await Post.create({
@@ -62,7 +67,7 @@ const resolvers = {
           { $addToSet: { posts: post._id } }
         );
 
-        return thought;
+        return post;
       }
       throw new AuthenticationError("You need to be logged in!");
     },

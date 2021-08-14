@@ -1,0 +1,15 @@
+[
+    {
+        "username": "Brian Kernighan",
+        "password": "password01"
+        
+    },
+    {
+        "username": "Max Kanat-Alexander",
+        "password": "password02"
+    },
+    {
+        "username": "Why The Lucky Stiff",
+        "password": "password03"
+    }
+]
