@@ -20,6 +20,9 @@ if (loading) {
     return <div>Loading...</div>;
 }
 
+
+//viewPost card needs some untangling. i'm incorporating responsive image card css into the og post card from explore
+
 return (
 
     <div className="container">
