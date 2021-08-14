@@ -52,6 +52,8 @@ function App() {
         
 {/* divs and Route exact paths go here */}
 
+<div>Hello World</div>
+
       </Router>
     </ApolloProvider>
   );
