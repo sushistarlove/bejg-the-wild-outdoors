@@ -24,10 +24,10 @@ return (
 
     <div className="container">
 
-<div class="image">
+<div className="image">
     <img src="" alt="">
-    <div class="details">
-        <div class="content">
+    <div className="details">
+        <div className="content">
                   <h2 className="postTitle" style={{ textAlign: "center" }}>Welcome to Wild Outdoors</h2>
                   Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
                   eros. Donec id elit non mi porta gravida at eget metus. Cum
@@ -35,18 +35,18 @@ return (
                   nascetur ridiculus mus. Cras mattis consectetur purus sit amet
                   fermentum.
                 </div>
-        <div class="more">
+        <div className="more">
             <a href="" target="blank"
-                rel="noopener noreferrer" class="read-more">View<span>Post</span></a>
+                rel="noopener noreferrer" className="read-more">View<span>Post</span></a>
             
-            <div class="icons">
-                 <i class="fas fa-campground"></i>
-                 <i class="fas fa-hiking"></i>
-                 <i class="fas fa-fish"></i>
-                 <i class="fas fa-snowboarding"></i>
-                 <i class="fas fa-binoculars"></i>
-                 <i class="fas fa-anchor"></i>
-                 <i class="fas fa-mountain"></i>
+            <div className="icons">
+                 <i className="fas fa-campground"></i>
+                 <i className="fas fa-hiking"></i>
+                 <i className="fas fa-fish"></i>
+                 <i className="fas fa-snowboarding"></i>
+                 <i className="fas fa-binoculars"></i>
+                 <i className="fas fa-anchor"></i>
+                 <i className="fas fa-mountain"></i>
                 </div> 
 
 
