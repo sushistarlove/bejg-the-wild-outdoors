@@ -45,4 +45,17 @@ const client = new ApolloClient({
 });
 
 
+function App() {
+  return (
+    <ApolloProvider client={client}>
+      <Router>
+        
+{/* divs and Route exact paths go here */}
+
+      </Router>
+    </ApolloProvider>
+  );
+}
+
+
 export default App;
