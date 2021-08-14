@@ -26,12 +26,8 @@ const Explore = () => {
     <div className="card">
      <div className="card-content">
          <div className="content">
-           <h2 className="postTitle" style={{textAlign: "center"}}>A Kayaker's Guide to Vancouver Island</h2>
-           Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
-           eros. Donec id elit non mi porta gravida at eget metus. Cum
-           sociis natoque penatibus et magnis dis parturient montes,
-           nascetur ridiculus mus. Cras mattis consectetur purus sit amet
-           fermentum.
+         <Link to={{ pathname: `/post/${post._id}` }}><h2 className="postTitle" style={{textAlign: "center"}}>{post.postTitle}</h2></Link>  
+         
          </div>
          <div className="icons">
           <i className="fas fa-anchor"></i>
