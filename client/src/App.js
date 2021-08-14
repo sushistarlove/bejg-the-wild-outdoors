@@ -50,7 +50,12 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        
+        <section className="hero">
+          <div className="hero-body has-text-centered">
+            <p className="title">The Wild Outdoors</p>
+            <p className="subtitle">sharing outdoor experiences</p>
+          </div>
+        </section>
 
         
 {/* divs and Route exact paths go here */}
