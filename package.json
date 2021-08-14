@@ -17,6 +17,6 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    
+    "bulma": "^0.9.3"
   }
 }
