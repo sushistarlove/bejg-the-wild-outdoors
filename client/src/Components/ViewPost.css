@@ -21,6 +21,10 @@
     font-family: 'Varela Round', 'sans-serif';
 }
 
+body {
+    background-color: var(--charleston-green);
+}
+
 
 
 .container {

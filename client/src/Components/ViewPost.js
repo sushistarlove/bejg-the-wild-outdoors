@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Redirect, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -38,15 +39,18 @@ return (
     <div className="details">
         <div>
                   <h2 className="postTitle" style={{ textAlign: "center" }}>Welcome to Wild Outdoors</h2>
-                  Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                 
+                </div>
+        <div className="more">
+            <Link href="" target="blank"
+                rel="noopener noreferrer" className="read-more"> View<span>Post</span></Link>
+                <div className="postContent">
+                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
                   eros. Donec id elit non mi porta gravida at eget metus. Cum
                   sociis natoque penatibus et magnis dis parturient montes,
                   nascetur ridiculus mus. Cras mattis consectetur purus sit amet
                   fermentum.
                 </div>
-        <div className="more">
-            <a href="" target="blank"
-                rel="noopener noreferrer" className="read-more">View<span>Post</span></a>
             
             <div className="icons">
                 <FontAwesomeIcon icon="faCampground" />
