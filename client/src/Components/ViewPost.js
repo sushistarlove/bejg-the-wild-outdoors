@@ -36,8 +36,8 @@ return (
 <div className="image">
     <img src="" alt="">
     <div className="details">
-        <div className="content">
-                  <h2 className="postTitle" style={{ textAlign: "center" }}>Welcome to Wild Outdoors</h2>
+        <div>
+                  <h2 className="postTitle" style={{ textAlign: "center", fontSize: 20 }}>Welcome to Wild Outdoors</h2>
                   Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
                   eros. Donec id elit non mi porta gravida at eget metus. Cum
                   sociis natoque penatibus et magnis dis parturient montes,
