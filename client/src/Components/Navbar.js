@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faHiking, faFish, faCampground, faBinoculars } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 
 // import auth ?
 
-// still need to import font awesome icons
+
 
 const Navbar = () => {
     return (
@@ -12,10 +17,10 @@ const Navbar = () => {
         <aside  className="menu column-is-one-quarter is-mobile">
         <p className="menu-label">Categories</p>
         <ul className="menu-list">
-          <li><Link>Hiking    <i className="fas fa-hiking"></i></Link> </li>
-          <li><Link>Fishing    <i className="fas fa-fish"></i></Link></li>
-          <li><Link>Camping    <i className="fas fa-campground"></i></Link></li>
-          <li><Link>Misc    <i className="fas fa-binoculars"></i></Link></li>
+          <li><Link>Hiking    <FontAwesomeIcon icon="faHiking" /></Link> </li>
+          <li><Link>Fishing    <FontAwesomeIcon icon="faFish" /></Link></li>
+          <li><Link>Camping    <FontAwesomeIcon icon="faCampground" /></Link></li>
+          <li><Link>Misc    <FontAwesomeIcon icon="faBinoculars" /></Link></li>
         </ul>
         <p className="menu-label">Profile</p>
         <ul className="menu-list">
