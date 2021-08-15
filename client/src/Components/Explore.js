@@ -29,9 +29,10 @@ const Explore = () => {
    <div className="column is-half-desktop is-half-tablet is-full-mobile" style={{backgroundColor: "#FFEFD3"}}>
     <div className="card">
      <div className="card-content">
-         <div className="content">
+         <div>
          <Link to={{ pathname: `/post/${post._id}` }}><h2 className="postTitle" style={{textAlign: "center"}}>{post.postTitle}</h2></Link>  
-         
+         <div className="postContent">
+           {/* post content goes here ?? */}
          </div>
          <div className="icons">
          <FontAwesomeIcon icon="faAnchor" />
