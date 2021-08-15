@@ -25,44 +25,38 @@ const Explore = () => {
   <div key={post._id} className="column-is-three-quarters" style={{paddingLeft: "10px"}}>
       <div class="columns is-multiline">
 
-     
-   <div className="column is-half-desktop is-half-tablet is-full-mobile container" style={{backgroundColor: "#FFEFD3"}}>
+   <div className="column is-half-desktop is-half-tablet is-full-mobile" style={{backgroundColor: "#FFEFD3"}}>
     <div className="image">
     <img src="" alt="">
      <div className="details">
          <div>
          <Link to={{ pathname: `/post/${post._id}` }}><h2 className="postTitle" style={{textAlign: "center"}}>{post.postTitle}</h2></Link>  
          <div className="postContent">
-           {/* post content goes here ?? */}
+           {post.postContent}
          </div>
          <div className="icons">
-         <FontAwesomeIcon icon="faAnchor" />
-          <FontAwesomeIcon icon="faCampground" />
-          <FontAwesomeIcon icon="faFish" />
-          <FontAwesomeIcon icon="faBinoculars" />
+         <FontAwesomeIcon icon="faAnchor" /><FontAwesomeIcon icon="faCampground" /><FontAwesomeIcon icon="faFish" /><FontAwesomeIcon icon="faBinoculars" />
          </div> 
        </div>
     </div>
     </img>
    </div>
 
-
 </div>
-</div>)}
-
-)
-
-            }
 </div>
-
-
+</div>
+            
   )
-          }
+            }
+)
+            }
+                 
+  </div>
+            )
+  }
   </div>
   )
-        
   };
-
-
+  
 
 export default Explore;
