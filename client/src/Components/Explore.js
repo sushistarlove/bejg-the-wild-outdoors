@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_POSTS } from '../utils/queries';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faHiking, faFish, faCampground, faBinoculars, faAnchor } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faHiking, faFish, faCampground, faBinoculars, faAnchor);
 
 const Explore = () => {
   const { loading, data } = useQuery(QUERY_POSTS, {
@@ -29,10 +34,10 @@ const Explore = () => {
          
          </div>
          <div className="icons">
-          <i className="fas fa-anchor"></i>
-          <i className="fas fa-campground"></i>
-          <i className="fas fa-fish"></i>
-          <i className="fas fa-binoculars"></i>
+         <FontAwesomeIcon icon="faAnchor" />
+          <FontAwesomeIcon icon="faCampground" />
+          <FontAwesomeIcon icon="faFish" />
+          <FontAwesomeIcon icon="faBinoculars" />
          </div> 
        </div>
     </div>
