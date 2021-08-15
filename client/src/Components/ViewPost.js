@@ -1,6 +1,12 @@
 import React from 'react';
 import { Redirect, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faHiking, faFish, faCampground, faBinoculars, faSnowboarding, faAnchor, faMountain } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faHiking, faFish, faCampground, faBinoculars, faSnowboarding, faAnchor, faMountain);
 
 // import comments? editPost?
 //import queries
@@ -10,7 +16,7 @@ const ViewPost = () => {
     // useParams() to retrieve post id ?? 
     const { postId } = useParams();
 
-    //const { loading, data } = useQuery({ variables: { postId: postId }})
+    const { loading, data } = useQuery({ variables: { postId: postId }})
     //pass URL paramter to load post?
 
 
@@ -43,13 +49,13 @@ return (
                 rel="noopener noreferrer" className="read-more">View<span>Post</span></a>
             
             <div className="icons">
-                 <i className="fas fa-campground"></i>
-                 <i className="fas fa-hiking"></i>
-                 <i className="fas fa-fish"></i>
-                 <i className="fas fa-snowboarding"></i>
-                 <i className="fas fa-binoculars"></i>
-                 <i className="fas fa-anchor"></i>
-                 <i className="fas fa-mountain"></i>
+                <FontAwesomeIcon icon="faCampground" />
+                <FontAwesomeIcon icon="faHiking" />
+                 <FontAwesomeIcon icon="faFish" />
+                 <FontAwesomeIcon icon="faSnowboarding" />
+                 <FontAwesomeIcon icon="faBinoculars" />
+                 <FontAwesomeIcon icon="faAnchor" />
+                 <FontAwesomeIcon icon="faMountain" />
                 </div> 
 
 
