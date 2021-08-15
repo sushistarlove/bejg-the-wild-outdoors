@@ -3,8 +3,8 @@ import { useQuery } from '@apollo/client';
 import { QUERY_POSTS } from '../utils/queries';
 
 const Explore = () => {
-  // const { loading, data } = useQuery(QUERY_POSTS, {
-  //   fetchPolicy: "no-cache"
+  const { loading, data } = useQuery(QUERY_POSTS, {
+    fetchPolicy: "no-cache"});
 
     const postList = data?.posts || [];
 
