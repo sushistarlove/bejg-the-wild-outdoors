@@ -26,9 +26,10 @@ const Explore = () => {
       <div class="columns is-multiline">
 
      
-   <div className="column is-half-desktop is-half-tablet is-full-mobile" style={{backgroundColor: "#FFEFD3"}}>
-    <div className="card">
-     <div className="card-content">
+   <div className="column is-half-desktop is-half-tablet is-full-mobile container" style={{backgroundColor: "#FFEFD3"}}>
+    <div className="image">
+    <img src="" alt="">
+     <div className="details">
          <div>
          <Link to={{ pathname: `/post/${post._id}` }}><h2 className="postTitle" style={{textAlign: "center"}}>{post.postTitle}</h2></Link>  
          <div className="postContent">
@@ -42,6 +43,7 @@ const Explore = () => {
          </div> 
        </div>
     </div>
+    </img>
    </div>
 
 
