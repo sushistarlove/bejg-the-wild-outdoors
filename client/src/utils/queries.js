@@ -7,15 +7,18 @@ export const QUERY_POSTS = gql`
       postContent
       postAuthor
       postTitle
+      comments {
+        commentText
+      }
       createdAt
-      comments
+
     }
   }
 `;
 
 export const QUERY_POST = gql`
-  query onePost {
-    post {
+  query onePost($post_id: ID!) {
+    post(postId: $post_id) {
       _id
       postContent
       postAuthor
@@ -31,15 +34,13 @@ export const QUERY_USERS = gql`
     users {
         _id
         username
-        password
-        posts
     }
   }
 `;
 
 export const QUERY_USER = gql`
-  query oneUser {
-    user {
+  query oneUser($username: String!) {
+    user(username: $username) {
         _id
         username
         password
