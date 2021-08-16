@@ -20,7 +20,7 @@
 }
 
 .title {
-  color: orange;
+  color: orange !important;
   font-family: 'Pacifico', 'cursive';
   font-size: 40px;
 }
