@@ -17,7 +17,7 @@
 } */
 
 .menu-label {
-    color: var(--chocolate-web);
+    color: var(--chocolate-web) !important;
     font-family: 'Pacifico', 'cursive';
 }
 
