@@ -19,15 +19,12 @@
   
 }
 
-.title {
-  color: orange !important;
-  font-family: 'Pacifico', 'cursive';
-  font-size: 40px;
+.menu-label {
+    color: var(--chocolate-web);
+    font-family: 'Pacifico', 'cursive';
 }
 
-
-
-.subtitle {
-  font-family: 'Pacifico', 'cursive';
-  color: var(--cyan-process) !important;
+.menu-list {
+    color: var(--wheat);
 }
+
