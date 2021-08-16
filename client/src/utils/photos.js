@@ -20,6 +20,9 @@ const newPostHandler = async (event) => {
             if (result.event === "success") {
              
             const image = result.info.secure_url;
+
+
+            // needs refactor for fetch!!!
            
             if (image) {
                 fetch("/api/post", {

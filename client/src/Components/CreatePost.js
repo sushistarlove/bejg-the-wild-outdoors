@@ -1,5 +1,13 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
+import '../utils/photos.js';
+
+// let widget = window.cloudinary.createUploadWidget({
+//     cloudName: "cloudcontrol",
+//     uploadPreset: "wild_outdoors"
+// },
+// (error, result) => {})
+
 
 const CreatePost = () => {
     return (
@@ -12,7 +20,7 @@ const CreatePost = () => {
 
 <textarea className="textarea" placeholder="Post Content" rows="50"></textarea>
 
-<button id="upload_widget" className="button is-primary is-align-content-center">Upload Photo</button>
+{/* <button id="upload_widget" className="button is-primary is-align-content-center">Upload Photo</button> */}
 
 <div className="select">
 <select>
@@ -32,6 +40,8 @@ const CreatePost = () => {
             </div>
         </div>
     )
+
+    
 };
 
 
