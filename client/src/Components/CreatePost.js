@@ -3,7 +3,15 @@ import { useQuery } from '@apollo/client';
 
 const CreatePost = () => {
     return (
-        <div></div>
+        <div className="container">
+         <div className="column is-three-quarters-desktop is-full-mobile">
+
+             
+
+
+
+            </div>
+        </div>
     )
 };
 
