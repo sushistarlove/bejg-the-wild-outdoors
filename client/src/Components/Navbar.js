@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faHiking, faFish, faCampground, faBinoculars } from '@fortawesome/free-solid-svg-icons';
-
+import Auth from "../utils/auth";
 library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 
 // import auth ?
@@ -36,7 +36,17 @@ library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 // export default Navbar;
 
 function Navbar({ currentPage, handlePageChange }) {
+
+  let authStatus;
+  if(Auth.loggedIn) {
+    authStatus = "Sign Out";
+  } else {
+    authStatus = "Login";
+  }
+
+  
   return (
+
     <aside className="menu column-is-one-quarter is-mobile">
       {/* <p className="menu-label">Categories</p>
         <ul className="menu-list">
@@ -72,10 +82,11 @@ function Navbar({ currentPage, handlePageChange }) {
         <li className="nav-item">
           <a
             href="login"
-            onClick={() => handlePageChange('Login')}
+            onClick={authStatus === "Sign Out" ? () => Auth.logout : () => handlePageChange('Login')}
             className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}
           >
-            Login
+           {authStatus}
+              
           </a>
         </li>
 
