@@ -11,17 +11,18 @@ const CreatePost = () => {
          <textarea class="textarea" placeholder="Post Content" rows="50"></textarea>
 
          <div class="select">
-  <select>
-    <option>Select Categories</option>
-    <option>Boating</option>
-    <option>Camping</option>
-    <option>Climbing</option>
-    <option>Fishing</option>
-    <option>Hiking</option>
-    <option>Hunting</option>
-  </select>
-</div>
+    <select>
+        <option>Select Categories</option>
+        <option>Boating</option>
+        <option>Camping</option>
+        <option>Climbing</option>
+        <option>Fishing</option>
+        <option>Hiking</option>
+        <option>Hunting</option>
+    </select>
+        </div>
 
+    <button class="button is-link">Submit</button>
             </div>
         </div>
     )
