@@ -18,10 +18,10 @@ const Navbar = () => {
         <aside  className="menu column-is-one-quarter is-mobile">
         <p className="menu-label">Categories</p>
         <ul className="menu-list">
-          <li><Link>Hiking    <FontAwesomeIcon icon="faHiking" /></Link> </li>
-          <li><Link>Fishing    <FontAwesomeIcon icon="faFish" /></Link></li>
-          <li><Link>Camping    <FontAwesomeIcon icon="faCampground" /></Link></li>
-          <li><Link>Misc    <FontAwesomeIcon icon="faBinoculars" /></Link></li>
+          <li><Link>Hiking    <FontAwesomeIcon icon={['fas', 'hiking']} /></Link> </li>
+          <li><Link>Fishing    <FontAwesomeIcon icon={['fas', 'fish']} /></Link></li>
+          <li><Link>Camping    <FontAwesomeIcon icon={['fas', 'campground']} /></Link></li>
+          <li><Link>Misc    <FontAwesomeIcon icon={['fas', 'binoculars']} /></Link></li>
         </ul>
         <p className="menu-label">Profile</p>
         <ul className="menu-list">
