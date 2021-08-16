@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faHiking, faFish, faCampground, faBinoculars } from '@fortawesome/free-solid-svg-icons';
+import '../Components/NavBar.css';
 
 library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 
@@ -55,7 +56,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Explore')}
             className={currentPage === 'Explore' ? 'nav-link active' : 'nav-link'}
           >
-            Explore
+            Explore    <FontAwesomeIcon icon={['fas', 'binoculars']} />
           </a>
         </li>
 
@@ -65,7 +66,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Signup')}
             className={currentPage === 'Signup' ? 'nav-link active' : 'nav-link'}
           >
-            Signup
+            Signup  <FontAwesomeIcon icon={['fas', 'hiking']} />
           </a>
         </li>
 
@@ -75,7 +76,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Login')}
             className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}
           >
-            Login
+            Login    <FontAwesomeIcon icon={['fas', 'campground']} />
           </a>
         </li>
 
@@ -85,7 +86,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Create Post')}
             className={currentPage === 'Create Post' ? 'nav-link active' : 'nav-link'}
           >
-            Create Post
+            Create Post    <FontAwesomeIcon icon={['fas', 'fish']} />
           </a>
         </li>
 

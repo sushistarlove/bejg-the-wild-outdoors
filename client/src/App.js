@@ -7,7 +7,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import '../src/App.css';
+import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Explore from './Components/Explore';
@@ -17,7 +17,7 @@ import Navbar from './Components/Navbar';
 import CreatePost from './Components/CreatePost';
 import ViewPost from './Components/ViewPost';
 import EditPost from './Components/EditPost';
-import Comment from './Components/Comment';
+
 
 
 //GraphQL code from Unit 21 Act 26
