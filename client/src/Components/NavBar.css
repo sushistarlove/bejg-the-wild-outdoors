@@ -12,19 +12,24 @@
   --papaya-whip: #ffefd3ff;
 }
 
-* {
-  background-color: var(--charleston-green);
-  color: var(--papaya-whip);
-  font-family: 'Varela Round', 'sans-serif';
-  
-}
+/* aside {
+    background-color: var(--wheat);
+} */
 
 .menu-label {
     color: var(--chocolate-web);
     font-family: 'Pacifico', 'cursive';
 }
 
-.menu-list {
-    color: var(--wheat);
+/* .menu-list Link{
+    color: var(--cyan-process) !important;
+    font-family: 'Varela Round', 'sans-serif';
+
+} */
+
+a {
+    color: var(--papaya-whip) !important;
+    font-family: 'Varela Round', 'sans-serif';
+
 }
 

@@ -20,16 +20,18 @@
 }
 
 .title {
-  color: orange !important;
+  color: var(--carrot-orange) !important;
   font-family: 'Pacifico', 'cursive';
   font-size: 40px;
+  text-shadow: 4px 2px 2px var(--cyan-process);
+  
 }
-
 
 
 .subtitle {
   font-family: 'Pacifico', 'cursive';
   color: var(--cyan-process) !important;
 }
+
 
 
