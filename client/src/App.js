@@ -8,6 +8,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import '../src/App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Explore from './Components/Explore';
 import Signup from './Components/Signup';
@@ -65,6 +66,18 @@ function App() {
 
           <Route exact path="/">
           <Explore />
+          </Route>
+
+          <Route exact path="/signup">
+            <Signup />
+          </Route>
+
+          <Route exact path="/login">
+            <Login />
+          </Route>
+
+          <Route exact path ="/viewpost">
+            <ViewPost />
           </Route>
           
 
