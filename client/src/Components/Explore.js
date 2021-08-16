@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_POSTS } from "../utils/queries";
+import hiking from '../images/hiking1.jpg';
+import hiking2 from '../images/hiking2.jpg';
+import camp from '../images/camping1.jpg';
+import kayak from '../images/kayak1.jpg';
+import climb from '../images/climbing1.jpg';
+import fish from '../images/fishing1.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -11,6 +17,7 @@ import {
   faBinoculars,
   faAnchor,
 } from "@fortawesome/free-solid-svg-icons";
+
 
 library.add(fab, faHiking, faFish, faCampground, faBinoculars, faAnchor);
 
@@ -32,17 +39,19 @@ const Explore = () => {
             return (
               <div
                 key={post._id}
-                className="column-is-three-quarters"
+                className="column is-half-desktop is-half-tablet is-full-mobile"
                 style={{ paddingLeft: "10px" }}
               >
-                <div class="columns is-multiline">
+                <div className="row">
                   <div
-                    className="column is-half-desktop is-half-tablet is-full-mobile"
+                    className="column"
                     style={{ backgroundColor: "#FFEFD3" }}
                   >
-                    <div className="image">
-                      {/* <img src="" alt=""> */}
-                        <div className="details">
+                    <div className="image" style={{ backgroundImage: `url(${hiking})`  }}  >
+                    <img src={hiking2} alt="" />
+                      
+                        <div className="details" >
+                        
                           <div>
                             <Link to={{ pathname: `/post/${post._id}` }}>
                               <h2
@@ -63,17 +72,19 @@ const Explore = () => {
                             </div>
                           </div>
                         </div>
-                
+                  </div>
                     </div>
                   </div>
+                
                 </div>
-              </div>
             );
+           
           })}
         </div>
       )}
     </div>
-  );
+  )
+      
 };
 
 export default Explore;
