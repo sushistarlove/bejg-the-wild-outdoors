@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faHiking, faFish, faCampground, faBinoculars } from '@fortawesome/free-solid-svg-icons';
+import './NavrBar.css';
 
 library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 
