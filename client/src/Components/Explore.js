@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faHiking, faFish, faCampground, faBinoculars, faAnchor } from '@fortawesome/free-solid-svg-icons';
+import './Explore.css';
 
 library.add(fab, faHiking, faFish, faCampground, faBinoculars, faAnchor);
 
