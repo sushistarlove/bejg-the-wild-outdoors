@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faHiking, faFish, faCampground, faBinoculars } from '@fortawesome/free-solid-svg-icons';
-import Auth from "../utils/auth";
+import '../Components/NavBar.css';
+
 library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 
 // import auth ?
@@ -37,14 +38,9 @@ library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 
 function Navbar({ currentPage, handlePageChange }) {
 
-  let authStatus;
-  if(Auth.loggedIn) {
-    authStatus = "Sign Out";
-  } else {
-    authStatus = "Login";
-  }
 
-  
+
+
   return (
 
     <aside className="menu column-is-one-quarter is-mobile">
@@ -65,7 +61,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Explore')}
             className={currentPage === 'Explore' ? 'nav-link active' : 'nav-link'}
           >
-            Explore
+            Explore    <FontAwesomeIcon icon={['fas', 'binoculars']} />
           </a>
         </li>
 
@@ -75,18 +71,17 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Signup')}
             className={currentPage === 'Signup' ? 'nav-link active' : 'nav-link'}
           >
-            Signup
+            Signup  <FontAwesomeIcon icon={['fas', 'hiking']} />
           </a>
         </li>
 
         <li className="nav-item">
           <a
             href="login"
-            onClick={authStatus === "Sign Out" ? () => Auth.logout : () => handlePageChange('Login')}
+            onClick={() => handlePageChange('Login')}
             className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}
           >
-           {authStatus}
-              
+            Login    <FontAwesomeIcon icon={['fas', 'campground']} />
           </a>
         </li>
 
@@ -96,7 +91,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Create Post')}
             className={currentPage === 'Create Post' ? 'nav-link active' : 'nav-link'}
           >
-            Create Post
+            Create Post    <FontAwesomeIcon icon={['fas', 'fish']} />
           </a>
         </li>
 

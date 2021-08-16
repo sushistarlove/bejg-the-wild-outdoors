@@ -1,5 +1,5 @@
 // const newPostHandler = async (event) => {
-//     //second attempt from Cloudinary docs
+   
 //     const cloudName = "cloudcontrol"; // replace with your own cloud name
 //     const uploadPreset = "outdoors"; // replace with your own upload preset
 //     const myWidget = cloudinary.createUploadWidget(
