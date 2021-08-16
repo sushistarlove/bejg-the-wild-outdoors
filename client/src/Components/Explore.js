@@ -31,6 +31,7 @@ const Explore = () => {
 
   return (
     <div className="container">
+      <div className="row">
       {loading ? (
         <div>Loading...</div>
       ) : (
@@ -42,7 +43,7 @@ const Explore = () => {
                 className="column is-half-desktop is-half-tablet is-full-mobile"
                 style={{ paddingLeft: "10px" }}
               >
-                <div className="row">
+                
                   <div
                     className="column"
                     style={{ backgroundColor: "#FFEFD3" }}
@@ -62,7 +63,7 @@ const Explore = () => {
                               </h2>
                             </Link>
                             <div className="postContent">
-                              {post.postContent}
+                              <p>{post.postContent}</p>
                             </div>
                             <div className="icons">
                               <FontAwesomeIcon icon={['fas', 'anchor']} />
@@ -74,7 +75,7 @@ const Explore = () => {
                         </div>
                   </div>
                     </div>
-                  </div>
+                 
                 
                 </div>
             );
@@ -82,6 +83,7 @@ const Explore = () => {
           })}
         </div>
       )}
+      </div>
     </div>
   )
       
