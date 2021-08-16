@@ -47,7 +47,7 @@ const Explore = () => {
                     className="column"
                     style={{ backgroundColor: "#FFEFD3" }}
                   >
-                    <div className="image" style={{ backgroundImage: `url(${hiking})`  }}  >
+                    <div className="image" >
                     <img src={hiking2} alt="" />
                       
                         <div className="details" >

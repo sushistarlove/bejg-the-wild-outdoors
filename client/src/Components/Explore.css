@@ -107,11 +107,11 @@ body {
     font-weight: 900;
 }
 
-.image:hover .details h2{
+.im:hover .details h2{
     transform: translateY(-30px);
 } 
 
-.image .details p{
+ .details p{
     margin: 30px 30px 0 30px;
     font-size: 12px;
     font-weight: 300;
@@ -121,7 +121,7 @@ body {
     transition-property: opacity;
 }
 
-.image:hover .details p{
+.img:hover .details p{
     opacity: 1;
     transform: translateY(-40px);
 }
@@ -140,29 +140,10 @@ body {
 
 }
 
-.image:hover .more{
-    bottom: 0;
-}
-
-.more .read-more{
-    color: var(--charleston-green);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.more .read-more span{
-    font-weight: 900;
-}
-
-.more .icons i{
+ .icons i{
     display: flex;
     justify-content: space-around;
     color: var(--charleston-green);
     font-size: 20px;
 }
 
-.more .icons a:not(:last-child) i{
-    margin-right: 20px;
-}
