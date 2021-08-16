@@ -33,7 +33,7 @@ const CreatePost = (props) => {
     <div className="field">
 
 
-      <textarea className="textarea" placeholder="Post Content" rows="20"></textarea>
+      <textarea className="textarea" placeholder="Post Title" rows="20" id="postTitle"></textarea>
 
       <textarea
         className="textarea"
