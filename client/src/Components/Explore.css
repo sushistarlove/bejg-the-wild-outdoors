@@ -19,6 +19,7 @@
     /* background-color: var(--charleston-green); */
     color: var(--papaya-whip);
     font-family: 'Varela Round', 'sans-serif';
+    background-color: var(--charleston-green);
 }
 
 body {
