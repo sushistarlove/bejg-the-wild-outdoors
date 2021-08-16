@@ -14,11 +14,11 @@ const CreatePost = () => {
         <div className="container">
          <div className="column is-three-quarters-desktop is-full-mobile">
 
-            <div className="field is-grouped">
+            <div className="field">
 
             <input className="input" type="text" placeholder="Post Title"></input>
 
-<textarea className="textarea" placeholder="Post Content" rows="50"></textarea>
+<textarea className="textarea" placeholder="Post Content" rows="20"></textarea>
 
 {/* <button id="upload_widget" className="button is-primary is-align-content-center">Upload Photo</button> */}
 
