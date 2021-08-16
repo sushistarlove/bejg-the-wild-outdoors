@@ -54,13 +54,13 @@ return (
                 </div>
             
             <div className="icons">
-                <FontAwesomeIcon icon="faCampground" />
-                <FontAwesomeIcon icon="faHiking" />
-                 <FontAwesomeIcon icon="faFish" />
-                 <FontAwesomeIcon icon="faSnowboarding" />
-                 <FontAwesomeIcon icon="faBinoculars" />
-                 <FontAwesomeIcon icon="faAnchor" />
-                 <FontAwesomeIcon icon="faMountain" />
+                <FontAwesomeIcon icon={['fas', 'campground']} />
+                <FontAwesomeIcon icon={['fas', 'hiking']} />
+                 <FontAwesomeIcon icon={['fas', 'fish']} />
+                 <FontAwesomeIcon icon={['fas', 'snowboarding']} />
+                 <FontAwesomeIcon icon={['fas', 'binoculars']} />
+                 <FontAwesomeIcon icon={['fas', 'anchor']} />
+                 <FontAwesomeIcon icon={['fas', 'mountain']} />
                 </div> 
   
         </div>
