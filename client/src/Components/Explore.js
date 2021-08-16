@@ -55,12 +55,12 @@ const Explore = () => {
                             <div className="postContent">
                               {post.postContent}
                             </div>
-                            {/* <div className="icons">
-                              <FontAwesomeIcon icon="faAnchor" />
-                              <FontAwesomeIcon icon="faCampground" />
-                              <FontAwesomeIcon icon="faFish" />
-                              <FontAwesomeIcon icon="faBinoculars" />
-                            </div> */}
+                            <div className="icons">
+                              <FontAwesomeIcon icon={['fas', 'anchor']} />
+                              <FontAwesomeIcon icon={['fas', 'campground']} />
+                              <FontAwesomeIcon icon={['fas', 'fish']} />
+                              <FontAwesomeIcon icon={['fas', 'binoculars']} />
+                            </div>
                           </div>
                         </div>
                 
