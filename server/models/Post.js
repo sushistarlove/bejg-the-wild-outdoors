@@ -8,12 +8,35 @@ const postSchema = new Schema({
     minlength: 1,
     trim: true,
   },
+  postAuthor: {
+    type: String,
+    required: 'How dare you post without the acompanment of a reputabal author. Shameful',
+    minlength: 1,
+    trim: true,
+  },
   postContent: {
     type: String,
     required: 'Your lack of intellectual production is disgusting',
     minlength: 1,
     trim: true,
   },
+  postImage: {
+    type: String,
+    required: false,
+    minlength: 1,
+    trim: true,
+  },
+  categories: [
+    {
+      category: {
+        type: String,
+        required: 'If Netlfix can do it then so can we!',
+        minlength: 1,
+        maxlength: 280,
+      },
+  
+    },
+  ],
   user_id: {
     type: String,
   },
