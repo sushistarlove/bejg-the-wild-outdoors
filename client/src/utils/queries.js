@@ -15,6 +15,21 @@ export const QUERY_POSTS = gql`
     }
   }
 `;
+export const QUERY_USERSPOSTS = gql`
+  query usersPost($user_id: String!) {
+    usersPost(userID: $user_id) {
+      _id
+      postContent
+      postAuthor
+      postTitle
+      comments {
+        commentText
+      }
+      createdAt
+
+    }
+  }
+`;
 
 export const QUERY_POST = gql`
   query onePost($post_id: ID!) {

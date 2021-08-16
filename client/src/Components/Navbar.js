@@ -37,7 +37,12 @@ library.add(fab, faHiking, faFish, faCampground, faBinoculars);
 // export default Navbar;
 
 function Navbar({ currentPage, handlePageChange }) {
+
+
+
+
   return (
+
     <aside className="menu column-is-one-quarter is-mobile">
       {/* <p className="menu-label">Categories</p>
         <ul className="menu-list">
