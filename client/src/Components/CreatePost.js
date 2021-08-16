@@ -12,6 +12,8 @@ const CreatePost = () => {
 
 <textarea className="textarea" placeholder="Post Content" rows="50"></textarea>
 
+<button id="upload_widget" className="button is-primary is-align-content-center">Upload Photo</button>
+
 <div className="select">
 <select>
 <option>Select Categories</option>
