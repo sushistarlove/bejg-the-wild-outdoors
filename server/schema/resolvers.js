@@ -23,6 +23,7 @@ const resolvers = {
         return Post.find({ user_id: userID }).sort({ createdAt: -1 });
       }
     },
+    // usersPost: async(parent, {})
     post: async (parent, { postId }) => {
       //complete
       //good

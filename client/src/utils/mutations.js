@@ -6,6 +6,7 @@ export const ADD_USER = gql`
         _id
         username
         password
+        token
     }
   }
 `;
@@ -24,13 +25,14 @@ export const ADD_POST = gql`
     addPost(postTitle: $postTitle, postContent: $postContent) {
       postTitle
       postContent
+      tag
     }
   }
 `;
 
 export const ADD_COMMENT = gql`
-  mutation addComment( $postId: ID!, $postText: String!, $commentAuthor: String!) {
-    addComment( postId: $postId, postText: $postText, commentAuthor: $commentAuthor) {
+  mutation addComment( $postId: ID!, $commentText: String!) {
+    addComment( postId: $postId, commentText: $commentText) {
       postId
       postText
       commentAuthor
@@ -56,11 +58,11 @@ export const REMOVE_POST = gql`
   }
 `;
 
-export const REMOVE_COMMENT = gql`
-  mutation removePost($postId: ID!, $commentId: ID!) {
-    removePost(postId: $postId, commentId: $commentId) {
-      postId
-      commentId
-    }
-  }
-`;
+// export const REMOVE_COMMENT = gql`
+//   mutation removePost($postId: ID!, $commentId: ID!) {
+//     removePost(postId: $postId, commentId: $commentId) {
+//       postId
+//       commentId
+//     }
+//   }
+// `;
