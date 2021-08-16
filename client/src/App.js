@@ -14,6 +14,7 @@ import Explore from './Components/Explore';
 import Signup from './Components/Signup';
 import Login from './Components/Login';
 import Navbar from './Components/Navbar';
+import CreatePost from './Components/CreatePost';
 import ViewPost from './Components/ViewPost';
 import EditPost from './Components/EditPost';
 import Comment from './Components/Comment';
@@ -74,6 +75,10 @@ function App() {
 
           <Route exact path="/login">
             <Login />
+          </Route>
+
+          <Route exact path ="/createpost">
+            <CreatePost />
           </Route>
 
           <Route exact path ="/viewpost">

@@ -7,6 +7,7 @@ const CreatePost = () => {
          <div className="column is-three-quarters-desktop is-full-mobile">
 
             <div className="field is-grouped">
+
             <input className="input" type="text" placeholder="Post Title"></input>
 
 <textarea className="textarea" placeholder="Post Content" rows="50"></textarea>
@@ -24,6 +25,7 @@ const CreatePost = () => {
 </div>
 
 <button className="button is-link">Submit</button>
+
             </div>
             </div>
         </div>
