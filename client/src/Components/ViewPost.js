@@ -1,6 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Redirect, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faHiking, faFish, faCampground, faBinoculars, faSnowboarding, faAnchor, faMountain } from '@fortawesome/free-solid-svg-icons';
+
+library.add(fab, faHiking, faFish, faCampground, faBinoculars, faSnowboarding, faAnchor, faMountain);
 
 // import comments? editPost?
 //import queries
@@ -10,7 +17,7 @@ const ViewPost = () => {
     // useParams() to retrieve post id ?? 
     const { postId } = useParams();
 
-    //const { loading, data } = useQuery({ variables: { postId: postId }})
+    const { loading, data } = useQuery({ variables: { postId: postId }})
     //pass URL paramter to load post?
 
 
@@ -20,6 +27,9 @@ if (loading) {
     return <div>Loading...</div>;
 }
 
+
+//viewPost card needs some untangling. i'm incorporating responsive image card css into the og post card from explore
+
 return (
 
     <div className="container">
@@ -27,26 +37,29 @@ return (
 <div className="image">
     <img src="" alt="">
     <div className="details">
-        <div className="content">
+        <div>
                   <h2 className="postTitle" style={{ textAlign: "center" }}>Welcome to Wild Outdoors</h2>
-                  Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
+                 
+                </div>
+        <div className="more">
+            <Link href="" target="blank"
+                rel="noopener noreferrer" className="read-more"> View<span>Post</span></Link>
+                <div className="postContent">
+                Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
                   eros. Donec id elit non mi porta gravida at eget metus. Cum
                   sociis natoque penatibus et magnis dis parturient montes,
                   nascetur ridiculus mus. Cras mattis consectetur purus sit amet
                   fermentum.
                 </div>
-        <div className="more">
-            <a href="" target="blank"
-                rel="noopener noreferrer" className="read-more">View<span>Post</span></a>
             
             <div className="icons">
-                 <i className="fas fa-campground"></i>
-                 <i className="fas fa-hiking"></i>
-                 <i className="fas fa-fish"></i>
-                 <i className="fas fa-snowboarding"></i>
-                 <i className="fas fa-binoculars"></i>
-                 <i className="fas fa-anchor"></i>
-                 <i className="fas fa-mountain"></i>
+                <FontAwesomeIcon icon="faCampground" />
+                <FontAwesomeIcon icon="faHiking" />
+                 <FontAwesomeIcon icon="faFish" />
+                 <FontAwesomeIcon icon="faSnowboarding" />
+                 <FontAwesomeIcon icon="faBinoculars" />
+                 <FontAwesomeIcon icon="faAnchor" />
+                 <FontAwesomeIcon icon="faMountain" />
                 </div> 
 
 
