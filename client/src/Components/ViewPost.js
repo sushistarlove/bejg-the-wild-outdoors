@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faHiking, faFish, faCampground, faBinoculars, faSnowboarding, faAnchor, faMountain } from '@fortawesome/free-solid-svg-icons';
+import './ViewPost.css';
+
 
 library.add(fab, faHiking, faFish, faCampground, faBinoculars, faSnowboarding, faAnchor, faMountain);
 
@@ -34,16 +36,15 @@ return (
 
     <div className="container">
 
-<div className="image">
+<div className="column is-three-quarters-desktop is-full-mobile">
     <img src="" alt="">
-    <div className="details">
-        <div>
+    </img>
+    <div className="cardContent">
+        <div className="content">
                   <h2 className="postTitle" style={{ textAlign: "center" }}>Welcome to Wild Outdoors</h2>
                  
                 </div>
-        <div className="more">
-            <Link href="" target="blank"
-                rel="noopener noreferrer" className="read-more"> View<span>Post</span></Link>
+
                 <div className="postContent">
                 Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at
                   eros. Donec id elit non mi porta gravida at eget metus. Cum
@@ -61,12 +62,10 @@ return (
                  <FontAwesomeIcon icon="faAnchor" />
                  <FontAwesomeIcon icon="faMountain" />
                 </div> 
-
-
-            </div>
+  
         </div>
     
-</img>
+
     </div>
     </div>
    
