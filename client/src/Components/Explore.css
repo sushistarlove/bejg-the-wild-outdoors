@@ -19,7 +19,7 @@
     /* background-color: var(--charleston-green); */
     color: var(--papaya-whip);
     font-family: 'Varela Round', 'sans-serif';
-    background-color: var(--charleston-green);
+    /* background-color: var(--charleston-green); */
 }
 
 body {
@@ -43,12 +43,14 @@ body {
     flex-wrap: wrap;
 }
 
-#postCard {
+
+/* #postCard {
     display: block !important;
     width: 100%;
-}
+} */
 
-.image {
+.img {
+
     background-color: var(--cyan-process);
     position: relative;
     flex: 1;
@@ -59,7 +61,7 @@ body {
     overflow: hidden;
 }
 
-.image img{
+ img{
     opacity: 0.8;
     position: relative;
     vertical-align: top;
@@ -81,21 +83,26 @@ body {
     height: 100%;
 }
 
+.details {
+    background-color: transparent !important;
+}
+
 /* .res{
     color: var(--charleston-green);
 } */
 
 .postTitle {
     font-family: 'Pacifico', 'cursive';
-    color: var(--carrot-orange);
+    color: var(--carrot-orange) !important;
+    background-color: transparent !important;
   }
 
   .postContent {
-    color: var(--charleston-green);
+    color: var(--carrot-orange);
 }
 
   h2 {
-      font-size: 20px;
+      font-size: 50px !important;
   }
 
 .image .details {
@@ -127,14 +134,14 @@ body {
     transition-property: opacity;
 }
 
-.image:hover .details p{
+img:hover .details p{
     opacity: 1;
     transform: translateY(-40px);
 }
 
 .more{
     position: absolute;
-    background: var(--wheat);
+    /* background: var(--charleston-green); */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -143,6 +150,7 @@ body {
     bottom: -60px;
     transition: 0.6s;
     transition-property: bottom;
+    color: var(--carrot-orange) !important;
 
 }
 
@@ -151,34 +159,32 @@ body {
 }
 
 .more .read-more{
-    color: var(--charleston-green);
-    text-decoration: none;
+    /* color: var(--charleston-green);
+    text-decoration: none; */
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
+    color: var(--carrot-orange) !important;
 }
 
 .more .read-more span{
     font-weight: 900;
 }
 
-.more .icons i{
+.more .icons {
     display: flex;
     justify-content: space-around;
     color: var(--charleston-green);
     font-size: 20px;
 }
 
-.more .icons a:not(:last-child) i{
+/* .more .icons a:not(:last-child) i{
     margin-right: 20px;
-}
 
+} */
+/* 
 .is-multiline {
     display: flex;
     flex-direction: column;
-}
-/* #postCard {
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
 } */
+
