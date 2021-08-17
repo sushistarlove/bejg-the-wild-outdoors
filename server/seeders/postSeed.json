@@ -1,0 +1,38 @@
+[
+    {
+        "postTitle": "Brian Kernighan",
+        "postContent": "Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 70+ countries and territories.",
+        "user_id": "611712384cbf824b10fe12cd",
+        "comments": [
+            {
+                "commentAuthor": "Max Kanat-Alexander",
+                "commentText": " Great Article!"
+            }
+        ]
+        
+    },
+    {
+        "postTitle": "Max Kanat-Alexander",
+        "postContent": "With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!",
+        "user_id": "611712384cbf824b10fe12ce",
+        "comments": [
+            {
+                "commentAuthor": "Why The Lucky Stiff",
+                "commentText": "overhyped."
+            }
+        ]
+
+    },
+    {
+        "postTitle": "Why The Lucky Stiff",
+        "postContent": "Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to, all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!",
+        "user_id": "611712384cbf824b10fe12cf",
+        "comments": [
+            {
+                "commentAuthor": "Brian Kernighan",
+                "commentText": "I often wonder why Bill Gates chose the name Windows for a operating system"
+            }
+        ]
+
+    }
+]

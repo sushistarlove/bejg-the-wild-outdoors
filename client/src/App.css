@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round&display=swap');
+
+:root {
+  --cyan-process: #30bcedff;
+  --blue-ncs: #4087a9ff;
+  --independence: #4f5165ff;
+  --dark-liver: #474044ff;
+  --charleston-green: #293132ff;
+  --chocolate-web: #d96c06ff;
+  --carrot-orange: #f18f01ff;
+  --wheat: #ead2acff;
+  --papaya-whip: #ffefd3ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  background-color: var(--charleston-green);
+  color: var(--papaya-whip);
+  font-family: 'Varela Round', 'sans-serif';
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: var(--charleston-green);
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  color: var(--carrot-orange) !important;
+  font-family: 'Pacifico', 'cursive';
+  font-size: 40px;
+  text-shadow: 4px 2px 2px var(--cyan-process);
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.subtitle {
+  font-family: 'Pacifico', 'cursive';
+  color: var(--cyan-process) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

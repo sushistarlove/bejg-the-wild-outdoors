@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round&display=swap');
+
+:root {
+  --cyan-process: #30bcedff;
+  --blue-ncs: #4087a9ff;
+  --independence: #4f5165ff;
+  --dark-liver: #474044ff;
+  --charleston-green: #293132ff;
+  --chocolate-web: #d96c06ff;
+  --carrot-orange: #f18f01ff;
+  --wheat: #ead2acff;
+  --papaya-whip: #ffefd3ff;
+}
+
+/* aside {
+    background-color: var(--wheat);
+} */
+
+.menu-label {
+    color: var(--chocolate-web) !important;
+    font-family: 'Pacifico', 'cursive';
+}
+
+/* .menu-list Link{
+    color: var(--cyan-process) !important;
+    font-family: 'Varela Round', 'sans-serif';
+
+} */
+
+a {
+    color: var(--papaya-whip) !important;
+    font-family: 'Varela Round', 'sans-serif';
+
+}
+

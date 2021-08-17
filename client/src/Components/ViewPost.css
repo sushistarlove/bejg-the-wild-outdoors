@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Varela+Round&display=swap');
+
+:root {
+    --cyan-process: #30bcedff;
+    --blue-ncs: #4087a9ff;
+    --independence: #4f5165ff;
+    --dark-liver: #474044ff;
+    --charleston-green: #293132ff;
+    --chocolate-web: #d96c06ff;
+    --carrot-orange: #f18f01ff;
+    --wheat: #ead2acff;
+    --papaya-whip: #ffefd3ff;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: var(--charleston-green); */
+    color: var(--papaya-whip);
+    font-family: 'Varela Round', 'sans-serif';
+}
+
+body {
+    background-color: var(--charleston-green);
+}
+
+
+.container {
+    margin: 30px;
+    height: 100vh;
+    background-color: var(--charleston-green);
+}
+
+img {
+    
+    
+    position: relative;
+    max-width: 450px;
+    min-width: 450px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+
+.postTitle {
+    font-family: 'Pacifico', 'cursive';
+    color: var(--cyan-process);
+  }
+
+  .postContent {
+    color: var(--charleston-green);
+}
+
+  h2 {
+      font-size: 20px;
+  }
+
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    color: var(--charleston-green);
+    font-size: 20px;
+}
+
+
