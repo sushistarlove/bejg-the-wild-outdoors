@@ -16,12 +16,14 @@ const Explore = () => {
   const postList = data?.posts || [];
   console.log(postList);
 
+
+
   return (
     <div className="container">
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="columns">
+        <div className="columns postContainer"> 
           {postList.map((post) => {
             return (
               <div
@@ -29,10 +31,11 @@ const Explore = () => {
                 className="column-is-three-quarters"
                 style={{ paddingLeft: "10px" }}
               >
-                <div class="columns is-multiline">
+                <div class="column is-multiline">
                   <div
                     className="column is-half-desktop is-half-tablet is-full-mobile"
                     style={{ backgroundColor: "#FFEFD3" }}
+                    id="postCard"
                   >
                     <div className="image">
                       {/* <img src="" alt=""> */}

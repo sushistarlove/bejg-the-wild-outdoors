@@ -19,6 +19,7 @@
     /* background-color: var(--charleston-green); */
     color: var(--papaya-whip);
     font-family: 'Varela Round', 'sans-serif';
+    background-color: var(--charleston-green);
 }
 
 body {
@@ -30,6 +31,9 @@ body {
     margin: 30px;
     height: 100vh;
     background-color: var(--charleston-green);
+    display: flex;
+    flex-direction: column !important;
+ 
 }
 
 .row {
@@ -39,8 +43,12 @@ body {
     flex-wrap: wrap;
 }
 
+#postCard {
+    display: block !important;
+    width: 100%;
+}
+
 .image {
-    
     background-color: var(--cyan-process);
     position: relative;
     flex: 1;
@@ -164,3 +172,13 @@ body {
 .more .icons a:not(:last-child) i{
     margin-right: 20px;
 }
+
+.is-multiline {
+    display: flex;
+    flex-direction: column;
+}
+/* #postCard {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+} */
