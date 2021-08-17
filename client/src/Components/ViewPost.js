@@ -47,7 +47,6 @@ const ViewPost = () => {
 
   return (
     <div className="container">
-<<<<<<< HEAD
       <div className="column is-three-quarters-desktop is-full-mobile">
         <img src="" alt=""></img>
         <div className="cardContent">
@@ -73,32 +72,6 @@ const ViewPost = () => {
             <FontAwesomeIcon icon="faAnchor" />
             <FontAwesomeIcon icon="faMountain" />
           </div>
-=======
-
-<div className="column is-three-quarters-desktop is-full-mobile">
-    <img src="" alt="">
-    </img>
-    <div className="cardContent">
-        <div className="content">
-                  <h2 className="postTitle" style={{ textAlign: "center" }}>Welcome to Wild Outdoors</h2>
-                 
-                </div>
-
-                <div className="postContent">
-                
-                </div>
-            
-            <div className="icons">
-                <FontAwesomeIcon icon={['fas', 'campground']} />
-                <FontAwesomeIcon icon={['fas', 'hiking']} />
-                 <FontAwesomeIcon icon={['fas', 'fish']} />
-                 <FontAwesomeIcon icon={['fas', 'snowboarding']} />
-                 <FontAwesomeIcon icon={['fas', 'binoculars']} />
-                 <FontAwesomeIcon icon={['fas', 'anchor']} />
-                 <FontAwesomeIcon icon={['fas', 'mountain']} />
-                </div> 
-  
->>>>>>> 319362769e6483dd5b536b6a1212156c66c772a7
         </div>
       </div>
 
