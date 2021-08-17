@@ -11,6 +11,7 @@ import fish from '../images/fishing1.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import Auth from "../utils/auth";
 import {
   faHiking,
   faFish,
@@ -30,13 +31,17 @@ const Explore = () => {
   const postList = data?.posts || [];
   console.log(postList);
 
+
+
   return (
     <div className="container">
      
       {loading ? (
         <div>Loading...</div>
       ) : (
+
         <div className="row">
+
           {postList.map((post) => {
             return (
               <div
@@ -44,6 +49,7 @@ const Explore = () => {
                 className="column is-half-desktop is-half-tablet is-full-mobile"
                 style={{ paddingLeft: "10px" }}
               >
+
                 
                   {/* <div
                     className="column is-multiline"
@@ -54,6 +60,7 @@ const Explore = () => {
                     <div className="image" >
                     <img style={{ alignSelf: "stretch"}} src={hiking2} alt="" />
                       
+
                         <div className="details">
 
                         <Link to={{ pathname: `/post/${post._id}` }}>

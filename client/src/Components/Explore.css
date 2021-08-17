@@ -43,12 +43,14 @@ body {
     flex-wrap: wrap;
 }
 
+
 /* #postCard {
     display: block !important;
     width: 100%;
 } */
 
 .img {
+
     background-color: var(--cyan-process);
     position: relative;
     flex: 1;
@@ -178,9 +180,11 @@ img:hover .details p{
 
 /* .more .icons a:not(:last-child) i{
     margin-right: 20px;
+
 } */
 /* 
 .is-multiline {
     display: flex;
     flex-direction: column;
 } */
+
