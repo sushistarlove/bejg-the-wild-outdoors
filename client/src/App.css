@@ -19,6 +19,11 @@
   
 }
 
+body {
+  background-color: var(--charleston-green);
+  
+}
+
 .title {
   color: var(--carrot-orange) !important;
   font-family: 'Pacifico', 'cursive';

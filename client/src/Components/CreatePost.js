@@ -27,6 +27,8 @@ const CreatePost = (props) => {
         tag: document.querySelector('#catMenu').value,
       },
     });
+    alert('Sucesfully created Post');
+    window.location.assign('/');
   };
 
   return (
