@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_POSTS } from "../utils/queries";
+import './Explore.css';
 import hiking from '../images/hiking1.jpg';
 import hiking2 from '../images/hiking2.jpg';
 import camp from '../images/camping1.jpg';
@@ -31,11 +32,11 @@ const Explore = () => {
 
   return (
     <div className="container">
-      <div className="row">
+     
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="columns">
+        <div className="row">
           {postList.map((post) => {
             return (
               <div
@@ -44,17 +45,18 @@ const Explore = () => {
                 style={{ paddingLeft: "10px" }}
               >
                 
-                  <div
-                    className="column"
+                  {/* <div
+                    className="column is-multiline"
                     style={{ backgroundColor: "#FFEFD3" }}
-                  >
+                  > */}
+
+
                     <div className="image" >
-                    <img src={hiking2} alt="" />
+                    <img style={{ alignSelf: "stretch"}} src={hiking2} alt="" />
                       
-                        <div className="details" >
-                        
-                          <div>
-                            <Link to={{ pathname: `/post/${post._id}` }}>
+                        <div className="details">
+
+                        <Link to={{ pathname: `/post/${post._id}` }}>
                               <h2
                                 className="postTitle"
                                 style={{ textAlign: "center" }}
@@ -62,9 +64,17 @@ const Explore = () => {
                                 {post.postTitle}
                               </h2>
                             </Link>
-                            <div className="postContent">
+                        
+                        
+                          <div className="more">
+
+                    
+                            <div className="postContent read-more">
+                              Read<span>More</span>
                               <p>{post.postContent}</p>
                             </div>
+
+
                             <div className="icons">
                               <FontAwesomeIcon icon={['fas', 'anchor']} />
                               <FontAwesomeIcon icon={['fas', 'campground']} />
@@ -72,9 +82,9 @@ const Explore = () => {
                               <FontAwesomeIcon icon={['fas', 'binoculars']} />
                             </div>
                           </div>
-                        </div>
+                       </div>
                   </div>
-                    </div>
+                    {/* </div> */}
                  
                 
                 </div>
@@ -83,7 +93,7 @@ const Explore = () => {
           })}
         </div>
       )}
-      </div>
+      
     </div>
   )
       
